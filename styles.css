@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+span {
+    color: #01111d;  /* fallback for old browsers */
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+.main {
+   width: 600px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    width: 500px;
+    height: 250px;
+    background: #fcfcfc7d;
+    color: #161313;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 17px;
+    color: #fff;
+}
+
+button {
+    padding: 13px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    color: #1d1111;
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+button img {
+    width: 35px;
+}
+
+button:active {
+    transform: scale(0.8)
+}
+
+
+/* media querries */
+
+@media(max-width: 720px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    textarea {
+     width: 350px;
+    }
+}
